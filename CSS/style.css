@@ -1,0 +1,109 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    border-bottom: 1px solid #000;
+    background-color: #fff;
+}
+
+.logo {
+    background-color: yellow;
+    padding: 10px;
+    border-radius: 50%;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #000;
+    padding: 5px 10px;
+    border: 1px solid #000;
+    border-radius: 3px;
+}
+
+section {
+    padding: 30px 20px;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+}
+
+.banner {
+    width: 100%;
+    max-width: 1366px;
+    height: 300px;
+    margin: 20px auto;
+    background: #f0f0f0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #000;
+}
+
+.headquarters {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.circle {
+    width: 100px;
+    height: 100px;
+    border: 2px solid #000;
+    border-radius: 50%;
+    margin: 0 auto 10px auto;
+}
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    gap: 10px;
+}
+
+.result {
+    border: 1px solid #000;
+    padding: 15px;
+    max-width: 300px;
+    text-align: left;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    font-size: 12px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .form-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
