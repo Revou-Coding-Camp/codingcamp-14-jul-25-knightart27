@@ -46,5 +46,36 @@
             </div>
         </div>
     </section>
+
+    <!-- Message Us Section -->
+    <section id="message">
+        <h2>Message Us</h2>
+        <div class="form-container">
+            <form id="messageForm">
+                <label>Nama:</label>
+                <input type="text" id="name" required><br>
+
+                <label>Tanggal Lahir:</label>
+                <input type="date" id="dob" required><br>
+
+                <label>Jenis Kelamin:</label>
+                <input type="radio" name="gender" value="Laki-Laki" required> Laki-Laki
+                <input type="radio" name="gender" value="Perempuan" required> Perempuan<br>
+
+                <label>Pesan:</label>
+                <textarea id="messageText" rows="4" required></textarea><br>
+
+                <button type="submit">Submit</button>
+            </form>
+
+            <div class="result" id="resultBox">
+                <p><b>Current time:</b> <span id="currentTime"></span></p>
+                <p><b>Nama:</b> <span id="resultName"></span></p>
+                <p><b>Tanggal Lahir:</b> <span id="resultDob"></span></p>
+                <p><b>Jenis Kelamin:</b> <span id="resultGender"></span></p>
+                <p><b>Pesan:</b> <span id="resultMessage"></span></p>
+            </div>
+        </div>
+    </section>
 </body>
 </html>
